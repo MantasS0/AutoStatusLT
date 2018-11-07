@@ -21,6 +21,8 @@ public class Fragment1 extends Fragment {
     private Button buttonNavigate_Fragment3;
     private Button buttonNavigate_Activity2;
 
+    public String automobilioPavadinimas1="Automobilis 1";
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

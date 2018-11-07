@@ -7,16 +7,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp"
-        android:text="Welcome to fragment 1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:text="Automobilis 1"
+        android:autoSizeMaxTextSize="350sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10sp"
         android:id="@+id/textTitle"/>
 
     <EditText
     android:id="@+id/textEdit_litrai"
     android:layout_width="150sp"
     android:layout_height="50sp"
-    android:layout_marginTop="70sp"
+    android:layout_marginTop="170sp"
     android:layout_marginEnd="15sp"
     android:layout_gravity="end"
     android:textColor="#999"
@@ -29,7 +30,7 @@
         android:text="Litrai"
         android:textAllCaps="true"
         android:textSize="20sp"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="180sp"
         android:layout_marginEnd="15sp"
         android:layout_marginStart="15sp"/>
 
@@ -37,7 +38,7 @@
         android:id="@+id/textEdit_kaina"
         android:layout_width="150sp"
         android:layout_height="50sp"
-        android:layout_marginTop="140sp"
+        android:layout_marginTop="240sp"
         android:layout_marginEnd="15sp"
         android:layout_gravity="end"
         android:textColor="#999"
@@ -50,7 +51,7 @@
         android:text="Kaina"
         android:textAllCaps="true"
         android:textSize="20sp"
-        android:layout_marginTop="150sp"
+        android:layout_marginTop="250sp"
         android:layout_marginEnd="15sp"
         android:layout_marginStart="15sp"/>
 
@@ -58,7 +59,7 @@
         android:id="@+id/textEdit_odometras"
         android:layout_width="150sp"
         android:layout_height="50sp"
-        android:layout_marginTop="210sp"
+        android:layout_marginTop="310sp"
         android:layout_marginEnd="15sp"
         android:layout_gravity="end"
         android:textColor="#999"
@@ -71,7 +72,7 @@
         android:text="Odometro rodmenys"
         android:textAllCaps="true"
         android:textSize="20sp"
-        android:layout_marginTop="210sp"
+        android:layout_marginTop="310sp"
         android:layout_marginEnd="15sp"
         android:layout_marginStart="15sp"/>
     
@@ -79,7 +80,7 @@
         android:id="@+id/textEdit_data"
         android:layout_width="150sp"
         android:layout_height="50sp"
-        android:layout_marginTop="280sp"
+        android:layout_marginTop="380sp"
         android:layout_marginEnd="15sp"
         android:layout_gravity="end"
         android:textColor="#999"
@@ -92,12 +93,30 @@
         android:text="Data"
         android:textAllCaps="true"
         android:textSize="20sp"
-        android:layout_marginTop="290sp"
+        android:layout_marginTop="390sp"
         android:layout_marginEnd="15sp"
         android:layout_marginStart="15sp"/>
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vidutinės sąnaudos: 99.9 l/100km"
+        android:id="@+id/textView_vidutinesSanaudos"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60sp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vidutinė kilometro kaina: 99.99 eur"
+        android:id="@+id/textView_vidutinesKaina"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90sp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="115sp"
         android:layout_height="wrap_content"
         android:text="Pridėti"
         android:id="@+id/button_addToDataBase"
@@ -107,40 +126,60 @@
         android:layout_gravity="end"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="115sp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/buttonNavigate_fragment1"
-        android:text="Go to Fragment1"/>
+        android:layout_gravity="start"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="450sp"
+        android:layout_marginBottom="15sp"
+        android:id="@+id/buttonNavigate_settings"
+        android:text="Nustatymai"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="115sp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonNavigate_fragment1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/buttonNavigate_fragment2"
-        android:text="Go to Fragment2"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="450sp"
+        android:layout_marginBottom="15sp"
+        android:id="@+id/buttonNavigate_stats"
+        android:text="Stats"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonNavigate_fragment2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/buttonNavigate_fragment3"
-        android:text="Go to Fragment3"/>
+    //Kiti mygtukai
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textTitle"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/buttonNavigate_fragment1"-->
+        <!--android:text="Go to Fragment1"/>-->
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonNavigate_fragment3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        android:id="@+id/buttonNavigate_activity2"
-        android:text="Go to Activity2"/>
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/buttonNavigate_fragment1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/buttonNavigate_fragment2"-->
+        <!--android:text="Go to Fragment2"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/buttonNavigate_fragment2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/buttonNavigate_fragment3"-->
+        <!--android:text="Go to Fragment3"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/buttonNavigate_fragment3"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:id="@+id/buttonNavigate_activity2"-->
+        <!--android:text="Go to Activity2"/>-->
 
 
 
