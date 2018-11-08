@@ -68,9 +68,6 @@ public class Pagrindinis extends Fragment {
 //                startActivity(intent);
 //            }
 //        });
-
-
-
         return view;
     }
 }
