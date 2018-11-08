@@ -47,7 +47,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="240sp"
             android:layout_marginEnd="15sp"
-            android:text="Viso sumokėta"
+            android:hint="Viso sumokėta"
             android:textAlignment="center"
             android:textColor="#999" />
 
@@ -68,7 +68,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="310sp"
             android:layout_marginEnd="15sp"
-            android:text="Kilometrai"
+            android:hint="Kilometrai"
             android:textAlignment="center"
             android:textColor="#999" />
 
@@ -89,17 +89,18 @@
             android:layout_gravity="end"
             android:layout_marginTop="380sp"
             android:layout_marginEnd="15sp"
-            android:text="Užpylimo data"
+            android:text="Uzpylimo data"
             android:textAlignment="center"
-            android:textColor="#999" />
+            android:textColor="#999"
+            />
 
         <TextView
-            android:layout_width="150sp"
+            android:layout_width="185sp"
             android:layout_height="wrap_content"
             android:layout_marginStart="15sp"
             android:layout_marginTop="390sp"
             android:layout_marginEnd="15sp"
-            android:text="Data"
+            android:text="Data(YYYY.mm.dd)"
             android:textAllCaps="true"
             android:textSize="20sp" />
 
