@@ -47,7 +47,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="240sp"
             android:layout_marginEnd="15sp"
-            android:text="Viso sumokėta"
+            android:hint="Viso sumokėta"
             android:textAlignment="center"
             android:textColor="#999" />
 
@@ -68,7 +68,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="310sp"
             android:layout_marginEnd="15sp"
-            android:text="Kilometrai"
+            android:hint="Kilometrai"
             android:textAlignment="center"
             android:textColor="#999" />
 
@@ -89,7 +89,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="380sp"
             android:layout_marginEnd="15sp"
-            android:text="Užpylimo data"
+            android:hint="Užpylimo data"
             android:textAlignment="center"
             android:textColor="#999" />
 
@@ -149,6 +149,17 @@
             android:layout_marginTop="450sp"
             android:layout_marginBottom="15sp"
             android:text="Stats" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_add_black_24dp" />
+
+
 
         //Kiti mygtukai
         <!--<Button-->

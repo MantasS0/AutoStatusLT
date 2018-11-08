@@ -4,6 +4,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.database.sqlite.SQLiteDatabase;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -23,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
         //setup the pager
         setupViewPager(mViewPager);
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        final DuomenysListAdapter adapter = new DuomenysListAdapter(this);
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
 
     }
